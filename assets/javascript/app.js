@@ -1,6 +1,6 @@
 
 $(document).ready( function() {
-var count= 120;
+var count= 20;
 
 var correct = 0;
 var incorrect = 0;
@@ -95,7 +95,6 @@ function timer()
         incorrect++;
         unanswered--; 
     }
-
 
      $("#game").css('display','none')
      clearInterval(counter);
