@@ -11,6 +11,9 @@ body {
 .colorRed {
     color: #FF0000;
 }
+.colorBlack {
+    color: #000000;
+}
 .fontOswald {
     font-family: 'Oswald', sans-serif;
 }
