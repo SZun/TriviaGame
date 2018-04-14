@@ -1,29 +1,33 @@
 //To Be Fixed: 
-// $("#doneBtn").on("click", function() {timer();}) 
+// $("#doneBtn").on("click", function() { done === true ;}) 
 // DRY UP!!
 $(document).ready( function() {
-
 
 var count= 120;
 var correct = 0;
 var incorrect = 0;
 var unanswered = 8;
+var done = false;
+// done = $("#doneBtn").on()
 
 $("#conclusion").css('display','none')
 $("#game").css('display','none')
 
 $("#startBtn").on("click", function() {
     $("#inception").css('display','none');
-    $("#game").css('display','inherit');      
+    $("#game").css('display','inherit');   
+    
+    $("#doneBtn").on("click", function() {
+        done = true
+      })
 
 var counter=setInterval(timer, 1000); 
 
 function timer()
-{
-
+{   
   count = count-1;
   $("#timer").html("Time Remaining: " + count + " Seconds"); 
-  if (count <= -1)
+  if (count <= -1 || done === true)
   {
     //If correct button is checked 
     if(document.getElementById('correct-answer-1').checked) {
