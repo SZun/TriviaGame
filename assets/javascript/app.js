@@ -1,6 +1,6 @@
 
 $(document).ready( function() {
-var count= 10;
+var count= 120;
 
 var correct = 0;
 var incorrect = 0;
@@ -82,7 +82,7 @@ function timer()
         unanswered--;
     }
     //if wrong button is checked
-    else if  (document.getElementById('sixthWrongAnswer-1').checked || document.getElementById('sixthWrongAnswer-2').checked || document.getElementById('sixthWrongAnswer-3').checked) {
+    else if  (document.getElementById('seventhWrongAnswer-1').checked || document.getElementById('seventhWrongAnswer-2').checked || document.getElementById('seventhWrongAnswer-3').checked) {
         incorrect++;
         unanswered--; 
     }
@@ -91,7 +91,7 @@ function timer()
         unanswered--;
     }
     //if wrong button is checked
-    else if  (document.getElementById('seventhWrongAnswer-1').checked || document.getElementById('seventhWrongAnswer-2').checked || document.getElementById('seventhWrongAnswer-3').checked) {
+    else if  (document.getElementById('eigthWrongAnswer-1').checked || document.getElementById('eigthWrongAnswer-2').checked || document.getElementById('eigthWrongAnswer-3').checked) {
         incorrect++;
         unanswered--; 
     }
