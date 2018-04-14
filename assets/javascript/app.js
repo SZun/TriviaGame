@@ -1,7 +1,10 @@
-
+//To Be Fixed: 
+// $("#doneBtn").on("click", function() {timer();}) 
+// DRY UP!!
 $(document).ready( function() {
-var count= 20;
 
+
+var count= 120;
 var correct = 0;
 var incorrect = 0;
 var unanswered = 8;
@@ -96,6 +99,7 @@ function timer()
         unanswered--; 
     }
 
+
      $("#game").css('display','none')
      clearInterval(counter);
      $("#conclusion").css('display','inherit')
@@ -103,9 +107,7 @@ function timer()
      $("#incorrect").html("Incorrect Answers: " + incorrect);
      $("#unanswered").html("Unanswered: " + unanswered);
      return;
-  }
-
+  }   
 }
 });
-
 });
