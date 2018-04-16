@@ -1,9 +1,6 @@
 $(document).ready( function() {
 
 var count= 121;
-var correct = 0;
-var incorrect = 0;
-var unanswered = 8;
 var done = false;
 var audio = new Audio("Bulls.mp4");
 
@@ -13,6 +10,9 @@ $("#game").css('display','none')
 $("#startBtn").on("click", function() {
     $("#inception").css('display','none');
     $("#game").css('display','inherit');   
+    var correct = 0;
+    var incorrect = 0;
+    var unanswered = 8;
     audio.play();
     $("#doneBtn").on("click", function() {
         done = true
